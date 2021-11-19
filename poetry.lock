@@ -1,0 +1,69 @@
+[[package]]
+name = "graphviz"
+version = "0.18.2"
+description = "Simple Python interface for Graphviz"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+dev = ["tox (>=3)", "flake8", "pep8-naming", "wheel", "twine"]
+docs = ["sphinx (>=1.8)", "sphinx-autodoc-typehints", "sphinx-rtd-theme"]
+test = ["pytest (>=6)", "pytest-mock (>=3)", "mock (>=4)", "pytest-cov"]
+
+[[package]]
+name = "pipdeptree"
+version = "2.2.0"
+description = "Command line utility to show dependency tree of packages"
+category = "main"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
+
+[package.extras]
+graphviz = ["graphviz"]
+
+[[package]]
+name = "pydeps"
+version = "1.10.12"
+description = "Display module dependencies"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+stdlib-list = "*"
+
+[[package]]
+name = "stdlib-list"
+version = "0.8.0"
+description = "A list of Python Standard Libraries (2.6-7, 3.2-9)."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+develop = ["sphinx"]
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "5decb538407c4a8de1834c9637bc58a5ac204050dcf9afe44f9487a675d3d771"
+
+[metadata.files]
+graphviz = [
+    {file = "graphviz-0.18.2-py3-none-any.whl", hash = "sha256:b0fda999966e75e974197c2a80946e9345f730837921a1180b4fd8397bea2799"},
+    {file = "graphviz-0.18.2.zip", hash = "sha256:b876ad68bc7b441f05dee6b36cc338c6b95ddb4e523bb7313c9f3dfe56fc342a"},
+]
+pipdeptree = [
+    {file = "pipdeptree-2.2.0-py2-none-any.whl", hash = "sha256:e31bcb4db905fe3df15e7c41bc015a3587ef4bafdd5119b011aae32948c4a371"},
+    {file = "pipdeptree-2.2.0-py3-none-any.whl", hash = "sha256:95fb603e46343651342583c337a0ee68d3ccade7a81f5cf6b2fbd8151b79ed80"},
+    {file = "pipdeptree-2.2.0.tar.gz", hash = "sha256:21a89e77d6eae635685e8af5ecd56561f092f8216bb290e7ae5362885d611f60"},
+]
+pydeps = [
+    {file = "pydeps-1.10.12-py3-none-any.whl", hash = "sha256:32659da82b220a0e4f8f7b2a618d3d590dc6525850df86d10427cc1be0dbe55d"},
+    {file = "pydeps-1.10.12.tar.gz", hash = "sha256:712a44a211f47b9b5a1ff6e98e2765ed3fbaf926c194ea6081d4893786c576ec"},
+]
+stdlib-list = [
+    {file = "stdlib-list-0.8.0.tar.gz", hash = "sha256:a1e503719720d71e2ed70ed809b385c60cd3fb555ba7ec046b96360d30b16d9f"},
+    {file = "stdlib_list-0.8.0-py3-none-any.whl", hash = "sha256:2ae0712a55b68f3fbbc9e58d6fa1b646a062188f49745b495f94d3310a9fdd3e"},
+]
